@@ -1,7 +1,7 @@
 import time
 from webbot import *
 import pyautogui
-import requests
+
 import argparse
 import sys
 
@@ -16,12 +16,6 @@ def getOptions(args=sys.argv[1:]):
 
     return options
 
-print("Running report.py...")
-
-# Example logic — replace with your own safe, policy-compliant logic
-response = requests.get("https://instagram.com/get")
-print("Status:", response.status_code)
-print("Response:", response.json())
 
 args = getOptions()
 
@@ -95,4 +89,4 @@ for line in range(len(file)+1):
     pyautogui.keyDown('w')
     time.sleep(0.5)
     pyautogui.keyUp('ctrl')
-    pyautogui.keyUp('w')
+    pyautogui.keyUp('https://replit.com/@Cw')
