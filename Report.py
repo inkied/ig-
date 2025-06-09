@@ -1,7 +1,7 @@
 import time
 from webbot import *
 import pyautogui
-
+import requests
 import argparse
 import sys
 
@@ -16,6 +16,12 @@ def getOptions(args=sys.argv[1:]):
 
     return options
 
+print("Running report.py...")
+
+# Example logic — replace with your own safe, policy-compliant logic
+response = requests.get("https://instagram.com/get")
+print("Status:", response.status_code)
+print("Response:", response.json())
 
 args = getOptions()
 
